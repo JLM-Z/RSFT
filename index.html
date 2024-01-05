@@ -129,8 +129,10 @@
                     
                     Dual-process model research indicates that individuals engage with decisions in two primary ways: a rapid, instinctive, subconscious manner (referred to as “System 1 or Fast-thinking”) 
                     and a measured, deliberate, conscious manner (“System 2 or Slow-thinking”). Based on this theory, we propose a framework that mimics human cognitive architecture to classify tasks and makes decisions on two systems based on instruction types.
+                    
+                    Upon receiving an instruction, the robot processes it through DistilRoBERTa to obtain an embedding. 
+                    Leveraging embedding similarity search, we classified the instruction into either a fast-thinking system or a slow-thinking system.
                     The framework is shown in below.
-
                 <div class="text-center">
                     <image src="img/fst.png" width="80%">
                 </div>
